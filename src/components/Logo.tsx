@@ -1,9 +1,19 @@
+import classNames from "classnames";
+import { useScreenWidth } from "../utils/useWindowSize";
+
 export function Logo() {
+  const { isDesktop, isTablet, isMobile } = useScreenWidth()
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="237"
       height="34"
+      className={classNames({
+        "w-[237px] h-[34px]": isDesktop,
+        "w-[202px] h-[28.98px]": isTablet,
+        "w-[167px] h-[23.76px]": isMobile,
+      })}
       fill="none"
       viewBox="0 0 237 34"
     >

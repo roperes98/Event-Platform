@@ -3,6 +3,7 @@ import ptBR from 'date-fns/locale/pt-BR';
 import { CheckCircle, Lock } from 'phosphor-react'
 import { Link, useParams } from 'react-router-dom';
 import classNames from 'classnames';
+import { useScreenWidth } from '../utils/useWindowSize';
 
 interface LessonProps {
   title: string;
@@ -12,6 +13,7 @@ interface LessonProps {
 }
 
 export function Lesson({ title, type, slug, availableAt }: LessonProps) {
+  const { isDesktop, isTablet, isMobile } = useScreenWidth()
   const { slug: currentLesson } = useParams<{ slug: string }>()
 
   const isLessonAvailable = isPast(availableAt);
@@ -23,12 +25,15 @@ export function Lesson({ title, type, slug, availableAt }: LessonProps) {
 
   return (
     <Link to={`/event/lesson/${slug}`} className='group'>
-      <span className="text-gray-300">
+      <span className="text-base text-gray-300">
         {availableDateFormatted}
       </span>
 
-      <div className={classNames('rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500', {
-        'bg-green-500': isActiveLesson
+      <div className={classNames('rounded border border-gray-500 px-4 group-hover:border-green-500', {
+        'bg-green-500': isActiveLesson,
+        'py-4 mt-2': isDesktop,
+        'py-[26px] mt-4': isTablet,
+        'py-5 mt-3': isMobile,
       })}>
         <header className="flex items-center justify-between">
           {isLessonAvailable ? (
@@ -54,7 +59,7 @@ export function Lesson({ title, type, slug, availableAt }: LessonProps) {
           </span>
         </header>
 
-        <strong className={classNames("mt-5 block", {
+        <strong className={classNames("mt-5 text-base block", {
           'text-white': isActiveLesson,
           'text-gray-200': !isActiveLesson
         })}>
