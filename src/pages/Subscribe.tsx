@@ -95,10 +95,10 @@ export function Subscribe() {
       </div>
 
       <div className="px-[6px]">
-        <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+        <img src="/code-mockup.png" className="mt-10" alt="" />
       </div>
 
-      <div className="flex w-full justify-center px-6 pb-[26px] bg-gray-900">
+      <div className="mt-auto flex w-full justify-center px-6 pb-[26px] bg-gray-900">
         <div className={classNames("pt-6 flex w-full max-w-[1392px] items-center border-t border-gray-500", {
           "justify-between": isDesktop,
           "flex-col": !isDesktop
