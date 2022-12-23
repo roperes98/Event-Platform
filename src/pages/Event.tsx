@@ -9,7 +9,7 @@ import { useScreenWidth } from "../utils/useWindowSize";
 export function Event() {
   const { isOpen } = useContext(BurgerMenuContext);
 
-  const { isDesktop, isTablet, isMobile } = useScreenWidth()
+  const { isDesktop } = useScreenWidth()
 
   const { slug } = useParams<{ slug: string }>()
 

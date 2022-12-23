@@ -5,7 +5,7 @@ import { Lesson } from "./Lesson";
 
 export function Sidebar() {
   const { data } = useGetLessonsQuery()
-  const { isDesktop, isTablet, isMobile } = useScreenWidth()
+  const { isDesktop } = useScreenWidth()
 
   return (
     <aside className={classNames("bg-gray-700 p-6 border-l border-gray-600", {
