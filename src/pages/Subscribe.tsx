@@ -94,9 +94,7 @@ export function Subscribe() {
         </div>
       </div>
 
-      <div className="px-[6px]">
-        <img src="/code-mockup.png" className="mt-10" alt="" />
-      </div>
+      <img src="/code-mockup.png" className="mt-8 px-[6px]" alt="" />
 
       <div className="mt-auto flex w-full justify-center px-6 pb-[26px] bg-gray-900">
         <div className={classNames("pt-6 flex w-full max-w-[1392px] items-center border-t border-gray-500", {
