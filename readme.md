@@ -24,7 +24,7 @@
 
 ## 📋 About
 
-Welcom to th Ignite Lab an event platform website for hosting and watching events of all types. With features such as event creation and management, video classes, and secure payment processing, we make it easy for organizers to plan and execute successful events. The platform is built using Codegen, GraphQL, Apollo, ReactJS, TypeScript, and Tailwind, ensuring a fast and efficient experience for both organizers and attendees. Whether you're hosting a live event or a virtual one, the platform has the tools you need to make it a success.
+Welcom to Ignite Lab an event platform website for hosting and watching events of all types. With features such as event creation and management, video classes, and secure payment processing, we make it easy for organizers to plan and execute successful events. The platform is built using Codegen, GraphQL, Apollo, ReactJS, TypeScript, and Tailwind, ensuring a fast and efficient experience for both organizers and attendees. Whether you're hosting a live event or a virtual one, the platform has the tools you need to make it a success.
 
 ⠀⠀⠀⠀⠀⠀⠀⠀
 ## ⚒️ Features
