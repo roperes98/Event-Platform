@@ -1,7 +1,7 @@
 <h1>
   <img src="/public/logo.svg" width="290px"/>
 </h1>
-[Click to see the website](https://www.event-platform-tau-eight.vercel.app/)
+https://www.event-platform-tau-eight.vercel.app/
 <h1>
     <img src="/public/cover.png"/>
 </h1>
